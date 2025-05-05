@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #0a0f1c;
+      color: #e0f0ff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #0d1330;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+    }
+
+    .logo span {
+      color: #3a8dff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #3a8dff;
+    }
+
+    .about-section {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about-section h1 {
+      color: #4fc3f7;
+      margin-bottom: 20px;
+      font-size: 3rem;
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #cfd8dc;
+      margin-bottom: 40px;
+    }
+
+    .about-section video {
+      width: 100%;
+      max-width: 800px;
+      border: 2px solid #3a8dff;
+      border-radius: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        padding: 40px 15px;
+      }
+
+      .about-section h1 {
+        font-size: 2.4rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <a href="index.html" class="logo">Port<span>folio</span></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="activity.html">Profile Sheet</a></li>
+        <li><a href="skill.html">Skills/Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="Lecture.html">Lecture</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <h1>About Me</h1>
+    <p>
+      Hello! My name is Shivang. I am a passionate and dedicated individual with a strong interest in technology and self-improvement. 
+      I am currently pursuing my studies and exploring areas such as programming, cloud computing, and career development.
+      <br><br>
+      My strengths lie in having a positive mindset, honesty, and effective communication skills. I always strive to grow, both personally and professionally, by participating in various practical activities, projects, and team-based learning.
+      <br><br>
+      Through my journey, I've gained experience with languages like C++, Python, and web technologies like HTML/CSS/JavaScript. 
+      I enjoy solving real-world problems through innovative solutions, and I am always ready to take on new challenges that push my abilities further.
+    </p>
+
+    <!-- Self Introduction Video -->
+    <video controls>
+      <source src="images/self.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+</body>
+</html>
